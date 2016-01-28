@@ -4,3 +4,10 @@ php:
   - 5.4
   - hhvm
 script: phpunit Test.php
+
+notifications:
+  email:
+    recipients:
+      - roeland.vanmullem@kpn.com
+    on_success: change # default: change
+    on_failure: always# default: always
